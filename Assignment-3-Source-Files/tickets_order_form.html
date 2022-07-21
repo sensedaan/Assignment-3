@@ -61,23 +61,76 @@
           <fieldset>
             <legend>Member Information</legend>
             <label for="email">E-Mail:</label>
-            <input type="text" name="email" id="email" /><br />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              autofocus
+              required
+            /><br />
 
             <label for="first_name">First Name: </label>
-            <input type="text" name="first_name" id="first_name" /><br />
+            <input
+              type="text"
+              name="first_name"
+              id="first_name"
+              required
+            /><br />
 
             <label for="last_name">Last Name: </label>
-            <input type="text" name="last_name" id="last_name" /> <br />
+            <input type="text" name="last_name" id="last_name" required />
+            <br />
 
             <label for="address">Address: </label>
-            <input type="text" name="address" id="address" /> <br />
+            <input type="text" name="address" id="address" required /> <br />
 
             <label for="city">City: </label>
-            <input type="text" name="city" id="city" /> <br />
+            <input type="text" name="city" id="city" required /> <br />
 
             <label for="province">Province: </label>
-            <input type="text" name="province" id="province" /><br />
+            <input
+              type="text"
+              name="province"
+              id="province"
+              required
+              pattern="[A-Za-z} {2}"
+              title="2-character code"
+              placeholder="2 character"
+            /><br />
+
+            <label for="postal_code">Postal Code: </label>
+            <input
+              type="text"
+              name="postal_code"
+              id="postal_code"
+              required
+              pattern="[A-Za-z0-9]{6}"
+              title="6 characters"
+              placeholder="6 characters"
+            />
+            <br />
+
+            <label for="phone_number">Phone Number: </label>
+            <input
+              type="tel"
+              name="phone_number"
+              id="phone_number"
+              pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+              title="Must be in the 999-999-9999 format"
+              placeholder="999-999-9999"
+            /><br />
           </fieldset>
+          <legend>Ordering Information</legend>
+          <label for="event">Event: </label>
+          <input type="text" name="event" id="event" /> <br />
+
+          <label for="event_type">Order Type: </label>
+          <select name="event_type" id="event_type">
+            <option value="C">Cookie Decoration Contest</option>
+            <option value="T">Tree Decoration Contest</option>
+            <option value="G">Gift of Light Ride-Along</option>
+            <option value="B">Breakfast with Santa</option>
+          </select>
         </form>
       </main>
 
