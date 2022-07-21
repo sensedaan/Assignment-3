@@ -120,17 +120,42 @@
               placeholder="999-999-9999"
             /><br />
           </fieldset>
-          <legend>Ordering Information</legend>
-          <label for="event">Event: </label>
-          <input type="text" name="event" id="event" /> <br />
 
-          <label for="event_type">Order Type: </label>
-          <select name="event_type" id="event_type">
-            <option value="C">Cookie Decoration Contest</option>
-            <option value="T">Tree Decoration Contest</option>
-            <option value="G">Gift of Light Ride-Along</option>
-            <option value="B">Breakfast with Santa</option>
-          </select>
+          <fieldset>
+            <legend>Ordering Information</legend>
+
+            <label for="event_type">Event: </label>
+            <select name="event_type" id="event_type">
+              <option value="C">Cookie Decoration Contest</option>
+              <option value="T">Tree Decoration Contest</option>
+              <option value="G">Gift of Light Ride-Along</option>
+              <option value="B">Breakfast with Santa</option>
+            </select>
+            <br />
+
+            <label for="order_type">Order Type:</label>
+            <select name="order_type" id="order_type">
+              <option value="M">Member Package</option>
+              <option value="D">Donor Package</option>
+              <option value="S">Single Tickets</option>
+            </select>
+            <br />
+            <label for="tickets">Number of Tickets: </label>
+            <input
+              type="text"
+              name="tickes"
+              id="tickets"
+              placeholder="Number of single tickets"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Payment method</legend>
+            <label for="bill">Bill Me</label>
+            <input type="radio" name="bill" id="bill" />
+            <label for="credit_card">Credit Card</label>
+            <input type="radio" name="bill" id="bill" />
+          </fieldset>
         </form>
       </main>
 
