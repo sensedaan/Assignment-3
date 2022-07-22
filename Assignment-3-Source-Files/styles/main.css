@@ -218,11 +218,22 @@ input:valid {
 input:invalid {
 	box-shadow: none;
 }
+#payment_method {
+float: none;
+}
+select#year{
+	width: 7em;
+	height: 1.5em;
+}
+select#month{
+	width: 6em;
+	height: 1.5em;
+}
 
-
-input[type="submit"] {
-	width: 15.2em;
+input#Submit {
+	width: 10em;
 	height: 2em;
+	margin-left: 7em;
 }
 
 br {
