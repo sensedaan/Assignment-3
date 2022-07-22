@@ -182,3 +182,50 @@ footer p {
 	font-size: 80%;
 	text-align: center;
 }
+
+/* Order stuff */
+
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+legend {
+    color: #931420;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 3px solid #d1a215;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+
+
+input[type="submit"] {
+	width: 15.2em;
+	height: 2em;
+}
+
+br {
+    clear: both;
+}
+
